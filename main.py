@@ -51,10 +51,10 @@ def hu_moments(I):
 
 X = scio.loadmat("mnist_all.mat");
 
-B = 100;
+B = 200;
 x = None;
 c = None;
-for d in [0,1,2,3]:
+for d in [0,1,3,5]:
     if x is None:
         x = X['test'+str(d)][:B];
         c = B*[0];
